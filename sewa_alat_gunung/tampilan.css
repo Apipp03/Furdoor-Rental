@@ -1,0 +1,143 @@
+/* Reset styling dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f9d423, #ff4e50);
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Section styling */
+section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 100%;
+    color: #333;
+    overflow: hidden;
+}
+
+/* Heading styling */
+h2 {
+    margin-bottom: 20px;
+    color: #ff4e50;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Heading style in table */
+th {
+    background-color: #ff6f61;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Table row hover effect */
+tr:hover {
+    background-color: #fce4ec;
+    color: #333;
+}
+
+/* Link styling */
+a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for empty data row */
+td[colspan] {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}
+
+@media print{
+    button,
+    th:last-child, 
+    td:last-child {
+        display: none;
+    }
+     body {
+        margin: 0;
+        font-size: 12px;
+     }
+     table {
+        width: 100%;
+        border-collapse: collapse;
+     }
+     th,
+     td{
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+     }
+     th{
+        background-color: #4caf50;
+        color: white;
+     }
+} 
+
+button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
